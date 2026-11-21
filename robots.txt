@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adityakumarnigam.github.io/nexa-business/sitemap.xml
