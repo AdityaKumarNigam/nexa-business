@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ANAX — thoughtfully picked everyday essentials.">
+  <meta name="theme-color" content="#11120f">
+  <title>ANAX — Everyday essentials</title>
+  <link rel="stylesheet" href="styles-a.css">
+  <link rel="stylesheet" href="styles-b.css">
+  <link rel="stylesheet" href="styles-c.css">
+</head>
+<body>
+  <div class="announcement">A considered collection of everyday essentials</div>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="#home" aria-label="ANAX home">ANAX<span>.</span></a>
+      <nav class="navlinks" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <div class="navright"><input id="search" class="search" type="search" placeholder="Search products" aria-label="Search products"><button class="bag" id="openCart">Bag <b id="bagCount">0</b></button></div>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero"><div class="wrap hero-inner">
+      <div><div class="eyebrow">The ANAX edit · Everyday goods</div><h1>Good things.<br><em>Less fuss.</em></h1><p>A simple collection of useful finds for your everyday routines. Browse the demo collection and discover the ANAX look.</p><a class="cta" href="#shop">Explore the collection <span aria-hidden="true">↘</span></a></div>
+      <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="orb-label">ANAX / SELECTED</div></div>
+    </div></section>
+    <div class="benefits"><div class="benefit">Thoughtful everyday picks</div><div class="benefit">Simple, clear product details</div><div class="benefit">Questions? Get in touch</div></div>
+    <section class="section wrap" id="shop">
+      <div class="section-head"><div><div class="kicker">The collection</div><h2>Find your everyday.</h2></div><p class="section-note">These are sample listings to preview the design. Replace them with your real products, prices and photos before publishing.</p></div>
+      <div class="filters" id="filters" aria-label="Filter products"><button class="filter active" data-filter="All">All items</button><button class="filter" data-filter="Tech">Tech</button><button class="filter" data-filter="Home">Home</button><button class="filter" data-filter="Accessories">Accessories</button><button class="filter" data-filter="Travel">Travel</button></div>
+      <div class="grid" id="productGrid" aria-live="polite"></div>
+    </section>
+    <section class="wrap" id="about"><div class="story"><div><div class="kicker">A little about ANAX</div><h2>Useful finds.<br>Thoughtful choices.</h2><p>ANAX is a clean, modern storefront concept built around practical everyday products. The layout is designed to be easy to browse on both phones and computers.</p></div><div class="story-mark" aria-hidden="true"><strong>ANAX</strong></div></div></section>
+  </main>
+  <footer id="contact"><div class="wrap footer-inner"><div><div class="footer-brand">ANAX.</div><div class="footer-copy">Everyday essentials, thoughtfully picked.<br>© <span id="year"></span> ANAX. All rights reserved.</div></div><div class="footer-links"><a href="#shop">Shop</a><a href="#about">About</a><a href="mailto:hello@example.com" title="Replace this sample email before publishing">Email (sample)</a></div></div></footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping bag" aria-modal="true" role="dialog">
+    <div class="drawer-head"><h2>Your bag</h2><button class="close" id="closeCart" aria-label="Close bag">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><div class="total"><span>Subtotal</span><span id="subtotal">₹0</span></div><button class="checkout" id="checkout">Continue to WhatsApp</button><p class="fineprint">Demo checkout only. Add a valid WhatsApp number in the site settings before using this button. No online payment is collected by this website.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
