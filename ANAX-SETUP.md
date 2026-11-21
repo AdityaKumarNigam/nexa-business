@@ -1,13 +1,32 @@
-# ANAX Store setup
+# ANAX Store — owner setup checklist
 
-This is a static storefront preview. The sample products and displayed prices are placeholders, not supplier offers or real inventory.
+The current site is a static storefront preview for general-audience everyday products. It is not yet a complete ecommerce system.
 
-## Before accepting enquiries
-- Replace the sample products and prices with accurate details for products you are allowed to sell.
-- Replace `hello@example.com` with a real business contact email.
-- Set `WHATSAPP_NUMBER` in `app.js` to your business contact number (digits only, including country code).
-- Test the site on a phone and verify all product and contact information.
+## Before using it as a real shop
 
-The cart currently sends an enquiry to WhatsApp only. It does not collect online payments, manage stock, create customer accounts, calculate shipping/tax, or connect to dropshipping suppliers. Do not treat the sample products or prices as real offers.
+1. Replace the six example listings in `app.js` with products that are genuinely available from a verified supplier. Add accurate titles, descriptions, images, prices and variants.
+2. Replace `WHATSAPP_NUMBER` in `app.js` with a business WhatsApp number in international digits-only format.
+3. Replace any contact and business identity details with accurate information.
+4. Publish clear shipping, delivery, cancellation, returns, refund, privacy and terms information that actually applies to the business.
+5. Confirm product legality, supplier terms, stock, delivery time, taxes, and final pricing before accepting enquiries or orders.
+6. Test the site on desktop and mobile.
 
-Because the store owner is under 18, a parent or guardian should handle any business registration, payment-provider account, supplier agreement, customer-data handling and fulfilment before real sales.
+## Current functionality
+
+- Responsive storefront layout and navigation
+- Product search, category filtering and sorting
+- Preview bag with quantity controls and session-only cart storage
+- WhatsApp product enquiry after a valid number is configured
+- FAQ and explanatory store information
+
+## Not included
+
+- Online payment processing
+- Supplier or dropshipping integration
+- Live stock / inventory sync
+- Shipping, tax, fulfilment or order tracking
+- Customer accounts, admin dashboard or newsletter backend
+
+The displayed products and prices are sample content and must not be treated as actual offers. The WhatsApp button sends an enquiry only; it does not confirm a sale or payment.
+
+Because the store owner is under 18, a parent or guardian should handle any business registration, payment-provider accounts, supplier agreements, customer-data responsibilities, contracts and fulfilment before real sales.
