@@ -1,20 +1,15 @@
 # ANAX Store
 
-A mobile-friendly static storefront preview for everyday products.
+A mobile-friendly static storefront preview for general-audience everyday goods.
 
-## Preview and deployment
+## Website files
 
-This site is kept on the `anax-store` branch so the existing default branch and `nexa-business` site remain unchanged.
+- `index.html` — storefront layout
+- `styles.css` — responsive visual design
+- `app.js` — product search, filters, sorting, bag and WhatsApp enquiry
 
-A GitHub Actions workflow attempts to publish this branch to GitHub Pages after the workflow is added. Check the **Actions** tab for the deployment result. If the workflow cannot enable Pages for this repository, Pages must be enabled by the repository owner in Settings → Pages.
+## Important
 
-## Before showing this as a real shop
+The items and prices are examples only. This website is not yet connected to suppliers, live inventory, payment processing, shipping, taxes or order tracking. The bag can send an enquiry to WhatsApp only after a valid business number is configured in `app.js`.
 
-- Replace all sample products, pictures and demo prices with accurate listings for products you are permitted to sell.
-- Replace the sample email address in `index.html`.
-- Set `WHATSAPP_NUMBER` in `app.js` to a business contact number (digits only, including country code).
-- Test the product search, filters, cart and WhatsApp enquiry on a phone.
-
-The cart is only an enquiry hand-off to WhatsApp. This static site does not collect online payments, manage inventory, create customer accounts, calculate tax or shipping, or connect to suppliers. The sample prices and products are not real offers.
-
-Because the store owner is under 18, a parent or guardian should handle business registration, payment-provider accounts, supplier agreements, customer-data responsibilities and fulfilment before any real sales.
+Read [ANAX-SETUP.md](ANAX-SETUP.md) and complete the checklist before using the site as a real shop.
