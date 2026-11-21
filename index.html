@@ -2,44 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ANAX — thoughtfully picked everyday essentials.">
-  <meta name="theme-color" content="#11120f">
-  <title>ANAX — Everyday essentials</title>
-  <link rel="stylesheet" href="styles-a.css">
-  <link rel="stylesheet" href="styles-b.css">
-  <link rel="stylesheet" href="styles-c.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10130f">
+  <meta name="description" content="Explore the ANAX everyday collection — a clean storefront preview for useful finds across tech, home and travel.">
+  <meta property="og:title" content="ANAX — Everyday, thoughtfully selected">
+  <meta property="og:description" content="Explore the ANAX collection of everyday essentials.">
+  <title>ANAX — Everyday, thoughtfully selected</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="announcement">A considered collection of everyday essentials</div>
-  <header>
-    <div class="wrap nav">
-      <a class="logo" href="#home" aria-label="ANAX home">ANAX<span>.</span></a>
-      <nav class="navlinks" aria-label="Main navigation"><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-      <div class="navright"><input id="search" class="search" type="search" placeholder="Search products" aria-label="Search products"><button class="bag" id="openCart">Bag <b id="bagCount">0</b></button></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span class="announcement-dot"></span> THE ANAX EDIT <span class="announcement-divider">/</span> EVERYDAY GOODS, SIMPLY PRESENTED</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ANAX home">ANAX<span>.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#shop">Shop</a><a href="#story">Our story</a><a href="#faq">FAQs</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-box" for="productSearch"><span aria-hidden="true">⌕</span><input id="productSearch" type="search" placeholder="Search the collection" autocomplete="off"></label>
+        <button class="bag-button" id="openCart" type="button" aria-label="Open shopping bag">Bag <span id="bagCount">0</span></button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation"><span></span><span></span></button>
+      </div>
     </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="#shop">Shop collection</a><a href="#story">Our story</a><a href="#faq">FAQs</a><a href="#contact">Contact</a>
+    </nav>
   </header>
-  <main id="home">
-    <section class="hero"><div class="wrap hero-inner">
-      <div><div class="eyebrow">The ANAX edit · Everyday goods</div><h1>Good things.<br><em>Less fuss.</em></h1><p>A simple collection of useful finds for your everyday routines. Browse the demo collection and discover the ANAX look.</p><a class="cta" href="#shop">Explore the collection <span aria-hidden="true">↘</span></a></div>
-      <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="orb-label">ANAX / SELECTED</div></div>
-    </div></section>
-    <div class="benefits"><div class="benefit">Thoughtful everyday picks</div><div class="benefit">Simple, clear product details</div><div class="benefit">Questions? Get in touch</div></div>
-    <section class="section wrap" id="shop">
-      <div class="section-head"><div><div class="kicker">The collection</div><h2>Find your everyday.</h2></div><p class="section-note">These are sample listings to preview the design. Replace them with your real products, prices and photos before publishing.</p></div>
-      <div class="filters" id="filters" aria-label="Filter products"><button class="filter active" data-filter="All">All items</button><button class="filter" data-filter="Tech">Tech</button><button class="filter" data-filter="Home">Home</button><button class="filter" data-filter="Accessories">Accessories</button><button class="filter" data-filter="Travel">Travel</button></div>
-      <div class="grid" id="productGrid" aria-live="polite"></div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> A LITTLE MORE THOUGHT IN EVERYDAY</p>
+          <h1>Everyday,<br><em>reconsidered.</em></h1>
+          <p class="hero-description">A considered mix of useful things for work, home and everything in between. Discover the ANAX collection.</p>
+          <div class="hero-actions"><a class="button button-lime" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a><a class="text-link" href="#story">A little about ANAX <span aria-hidden="true">→</span></a></div>
+          <div class="hero-footnote"><span class="tiny-line"></span> SIMPLE FINDS. CLEAR DETAILS. NO FUSS.</div>
+        </div>
+        <div class="hero-visual" aria-label="Abstract ANAX brand artwork" role="img">
+          <div class="visual-ring ring-one"></div><div class="visual-ring ring-two"></div>
+          <div class="visual-disc"><span>ANAX</span><small>OBJECTS FOR EVERYDAY</small></div>
+          <div class="visual-stamp">THE<br>DAILY<br>EDIT</div>
+          <div class="visual-caption">01 — SELECTED GOODS</div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>DESIGNED TO BE EASY TO EXPLORE</span><span>SCROLL TO DISCOVER ↓</span></div>
     </section>
-    <section class="wrap" id="about"><div class="story"><div><div class="kicker">A little about ANAX</div><h2>Useful finds.<br>Thoughtful choices.</h2><p>ANAX is a clean, modern storefront concept built around practical everyday products. The layout is designed to be easy to browse on both phones and computers.</p></div><div class="story-mark" aria-hidden="true"><strong>ANAX</strong></div></div></section>
+
+    <section class="value-strip" aria-label="Store information">
+      <div class="container value-grid">
+        <div><span class="value-number">01</span><p>Useful everyday categories</p></div>
+        <div><span class="value-number">02</span><p>Clear product information</p></div>
+        <div><span class="value-number">03</span><p>Direct product enquiries</p></div>
+      </div>
+    </section>
+
+    <section class="section collection-section" id="shop">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow dark-eyebrow"><span></span> THE COLLECTION</p><h2>Find your<br><em>everyday.</em></h2></div>
+          <div class="heading-side"><p>Browse the preview collection by category, or search for something specific.</p><span class="preview-label">STOREFRONT PREVIEW · SAMPLE ITEMS & PRICES</span></div>
+        </div>
+        <div class="shop-tools">
+          <div class="filter-list" id="filterList" aria-label="Filter products"></div>
+          <label class="sort-box" for="sortProducts">Sort <select id="sortProducts"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A to Z</option></select></label>
+        </div>
+        <div class="result-line"><span id="resultCount" aria-live="polite">Showing the collection</span><button class="clear-search" id="clearSearch" type="button" hidden>Clear search ×</button></div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <p class="catalogue-note">Please note: product names, illustrations and prices shown here are sample content for the website preview. They are not confirmed inventory or supplier offers.</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="container story-panel">
+        <div class="story-art"><div class="story-art-circle"></div><span class="story-art-word">A<span>.</span></span><span class="story-art-caption">ANAX / EST. FOR EVERYDAY</span></div>
+        <div class="story-copy"><p class="eyebrow dark-eyebrow"><span></span> THE IDEA</p><h2>Less noise.<br><em>Better choices.</em></h2><p>ANAX is a modern storefront concept for exploring useful everyday products. We believe shopping should feel clear: straightforward categories, readable details and an easy way to ask questions.</p><a class="text-link dark-link" href="#faq">Read the FAQs <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div><p class="eyebrow dark-eyebrow"><span></span> GOOD TO KNOW</p><h2>A few<br><em>answers.</em></h2><p class="faq-intro">This is an early storefront preview. Here is what is and is not ready yet.</p></div>
+        <div class="faq-list">
+          <details><summary>Are these real products and final prices?<span>+</span></summary><p>No. The current listings and prices are examples used to preview the design. They must be replaced with verified product, supplier and pricing information before accepting orders.</p></details>
+          <details><summary>Can customers pay on this website?<span>+</span></summary><p>Not yet. This version does not collect payments. The bag can prepare a product enquiry for WhatsApp after a valid business number is configured.</p></details>
+          <details><summary>Can I order or track a shipment now?<span>+</span></summary><p>No. Supplier connection, stock checks, shipping, order confirmation and tracking have not been configured. Availability and delivery details must be confirmed before any sale.</p></details>
+          <details><summary>How do I contact ANAX?<span>+</span></summary><p>Contact details need to be added by the store owner. The WhatsApp enquiry button will stay disabled until a valid number is entered in the setup section of the site code.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-panel">
+        <div><p class="eyebrow"><span></span> QUESTIONS ABOUT THE COLLECTION?</p><h2>Let's talk<br><em>details.</em></h2><p>Use the enquiry option after the store's official contact number has been configured.</p></div>
+        <a class="button button-light" href="#shop">Browse the collection <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
-  <footer id="contact"><div class="wrap footer-inner"><div><div class="footer-brand">ANAX.</div><div class="footer-copy">Everyday essentials, thoughtfully picked.<br>© <span id="year"></span> ANAX. All rights reserved.</div></div><div class="footer-links"><a href="#shop">Shop</a><a href="#about">About</a><a href="mailto:hello@example.com" title="Replace this sample email before publishing">Email (sample)</a></div></div></footer>
-  <div class="overlay" id="overlay"></div>
-  <aside class="drawer" id="drawer" aria-label="Shopping bag" aria-modal="true" role="dialog">
-    <div class="drawer-head"><h2>Your bag</h2><button class="close" id="closeCart" aria-label="Close bag">×</button></div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-bottom"><div class="total"><span>Subtotal</span><span id="subtotal">₹0</span></div><button class="checkout" id="checkout">Continue to WhatsApp</button><p class="fineprint">Demo checkout only. Add a valid WhatsApp number in the site settings before using this button. No online payment is collected by this website.</p></div>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div><a class="brand footer-brand" href="#top">ANAX<span>.</span></a><p class="footer-tagline">Everyday, thoughtfully selected.</p></div>
+      <div class="footer-column"><b>EXPLORE</b><a href="#shop">Shop collection</a><a href="#story">Our story</a><a href="#faq">FAQs</a></div>
+      <div class="footer-column"><b>INFORMATION</b><span>Shipping details: to be configured</span><span>Returns policy: to be configured</span><span>Privacy policy: to be configured</span></div>
+      <div class="footer-column"><b>CONTACT</b><span>Business contact details to be added</span><a href="#contact">Contact section</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> ANAX. All rights reserved.</span><span>STOREFRONT PREVIEW — NOT YET ACCEPTING PAYMENTS</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow dark-eyebrow"><span></span> YOUR SELECTION</p><h2 id="cartTitle">Your bag</h2></div><button class="close-button" id="closeCart" type="button" aria-label="Close bag">×</button></div>
+    <div class="cart-lines" id="cartLines"></div>
+    <div class="drawer-footer"><div class="subtotal-row"><span>Sample subtotal</span><strong id="cartSubtotal">₹0</strong></div><button class="button button-dark full-button" id="whatsappEnquiry" type="button">Send enquiry on WhatsApp <span aria-hidden="true">↗</span></button><p class="drawer-disclaimer">This creates an enquiry only. It does not place a confirmed order or collect payment. Sample prices are not final.</p></div>
   </aside>
-  <div class="toast" id="toast" role="status"></div>
-  <script src="app.js"></script>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
